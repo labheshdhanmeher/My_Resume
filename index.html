@@ -30,4 +30,254 @@
         }
 
         header p {
-            margin: 10px
+            margin: 10px 0;
+            font-size: 16px;
+            color: #cccccc;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-info ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-info li i {
+            color: #03a9f4;
+        }
+
+        .contact-info a {
+            color: #03a9f4;
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin: 20px;
+            gap: 20px;
+        }
+
+        .left-column,
+        .right-column {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .left-column {
+            margin-bottom: 20px;
+        }
+
+        .left-column,
+        .right-column {
+            width: 100%;
+        }
+
+        h2 {
+            border-bottom: 2px solid #03a9f4;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .experience-item,
+        .education-item,
+        .project-item,
+        .skills-item,
+        .certification-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3,
+        .education-item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #03a9f4;
+        }
+
+        .experience-item p,
+        .education-item p,
+        .project-item p {
+            margin: 5px 0;
+            color: #cccccc;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #1a1a1a;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .left-column,
+            .right-column {
+                flex: 1;
+                min-width: 300px;
+            }
+
+            header h1 {
+                font-size: 42px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            .contact-info ul {
+                flex-direction: row;
+                gap: 15px;
+                font-size: 16px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .experience-item h3,
+            .education-item h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Labhesh Dhanmeher</h1>
+        <p>Embedded Systems, IoT, EVs, and Industrial IoT Enthusiast with a passion for innovation and automation solutions.</p>
+        <div class="contact-info">
+            <ul>
+                <li><i class="fas fa-phone-alt"></i>8828296546</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:labheshdhanmeher5@gmail.com">labheshdhanmeher5@gmail.com</a></li>
+                <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/labheshdhanmeher/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="left-column">
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>Project Lead Head</h3>
+                    <p><strong>DROBOTICS Club, SJCEM (Sep 2023 - Present)</strong></p>
+                    <ul>
+                        <li>Leading a team of engineering students in designing and building drone and robotics projects.</li>
+                        <li>Collaborating with industry experts for hands-on sessions and innovative project ideas.</li>
+                        <li>Managing project timelines and ensuring completion within deadlines.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Campus Ambassador</h3>
+                    <p><strong>ISRC.ORG.IN (Sep 2023 - Present)</strong></p>
+                    <ul>
+                        <li>Promoting various competitions and events related to Robotics and Innovation.</li>
+                        <li>Networking with peers to drive awareness and participation in technical events.</li>
+                    </ul>
+                </div>
+                <div class="experience-item">
+                    <h3>Media Head</h3>
+                    <p><strong>SPACE SJCEM (Aug 2024 - Present)</strong></p>
+                    <ul>
+                        <li>Managing social media strategies for promoting club activities and events.</li>
+                        <li>Creating content to engage students in programming and circuit engineering.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>Bachelor of Engineering in Electronics and Computer Science</h3>
+                    <p><strong>St. John College of Engineering and Management (2022 - 2026)</strong></p>
+                    <p>Current CGPA: 8.5</p>
+                </div>
+            </section>
+        </div>
+
+        <div class="right-column">
+            <section id="projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3><strong>Home Automation System</strong></h3>
+                    <p>Designed a smart home system using ESP8266 and Sinric Pro, enabling users to control home appliances via voice commands and the Internet.</p>
+                </div>
+                <div class="project-item">
+                    <h3><strong>Arduino Joystick-Controlled Car</strong></h3>
+                    <p>Developed a car controlled via joystick, using Arduino, to participate in robotics competitions and demonstrate real-time vehicle control systems.</p>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2>Certified Courses</h2>
+                <ul>
+                    <li>TOYOTA (Self-Charged Hybrid Electric Vehicle)</li>
+                    <li>Diploma in Electric Vehicle Technology</li>
+                    <li>Getting Started with PIC16 MCUs using MCC and State Machines</li>
+                    <li>8-bit Microcontroller: Architecture of the PIC 16</li>
+                    <li>C++</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills and Abilities</h2>
+                <ul>
+                    <li>Embedded Systems Development</li>
+                    <li>Robotics & Robot Programming</li>
+                    <li>IoT Solutions & AWS IoT</li>
+                    <li>Python Programming</li>
+                    <li>Microcontroller Programming (PIC, Arduino, TI)</li>
+                    <li>Communication & Leadership</li>
+                    <li>Project Management</li>
+                </ul>
+            </section>
+
+            <section id="languages">
+                <h2>Languages</h2>
+                <ul>
+                    <li>Proficient in English, Hindi, Marathi</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>©2024 Labhesh Dhanmeher. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
